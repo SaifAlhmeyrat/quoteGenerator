@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
 
 html {
   box-sizing: border-box;
@@ -6,4 +7,96 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  background-color: #091e5e;
+  background-color: #f7f7f7;
+  background-color: #f7f7f7;
+  background-image: url("https://www.pictureeuropa.com/wp-content/uploads/2019/03/beach-sand-sky-sunset-evening-hd-wallpaper.jpg");
+  color: black;
+  font-family: 'Mate SC', serif;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-container {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgb(34, 233, 216, 0.4);
+  box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.4)
+}
+
+.quote-text {
+  font-size: 2.75rem;
+}
+
+.long-quote {
+  font-size: 2rem;
+}
+
+.fa-quote-left {
+  font-size: 4rem;
+}
+
+.quote-author {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(56, 56, 56);
+  outline: none;
+  padding: 0.5rem;
+  box-shadow: 0 0.3rem rgba(71, 71, 71, 0.6);
+}
+
+.twitter-button {
+  width: 4rem;
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(100, 100, 100, 0.6);
+}
+
+.twitter-button:hover {
+  color: #38a1f3;
+}
+
+.fa-twitter {
+  font-size: 1.5rem;
+}
+
+
+
+/* Media Query: table or smaller screen */
+@media screen and (max-width: 1000px) {
+  .quote-container {
+    margin: auto 20px;
+  }
+
+  .quote-text {
+    font-size: 2.5rem;
+  }
 }
